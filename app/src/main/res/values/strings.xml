@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HW4.2.2</string>
+    <string name="Task">Task</string>
+    <string name="title">\"Title: \"</string>
+    <string name="subtitle">\"Subtitle: \"</string>
+    <string name="checked">\"Checked: \"</string>
+    <string name="subtlt">название урока, к которому был задан Sample</string>
+</resources>
