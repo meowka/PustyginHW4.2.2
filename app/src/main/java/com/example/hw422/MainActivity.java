@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         final ListView listView = findViewById(R.id.listView);
-        btnDel = infla
+        btnDel = findViewById(R.id.btnDel);
 
 
         setSupportActionBar(toolbar);
