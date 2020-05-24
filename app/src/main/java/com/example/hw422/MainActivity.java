@@ -10,13 +10,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
+
 import androidx.appcompat.widget.Toolbar;
-
-
 
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -30,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
     private Random random = new Random();
     private ItemsDataAdapter adapter;
     private List<Drawable> images = new ArrayList<>();
-    Button btnDel;
-
 
 
     @Override
@@ -42,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         final ListView listView = findViewById(R.id.listView);
-        btnDel = findViewById(R.id.btnDel);
-
 
         setSupportActionBar(toolbar);
 
@@ -94,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addItem(new ItemData(
                 images.get(random.nextInt(images.size())),
                 getString(R.string.Task) + adapter.getCount(),
-                getString(R.string.subtlt), btnDel));
+                getString(R.string.subtlt)));
     }
 
     private void showItemData(int position) {
