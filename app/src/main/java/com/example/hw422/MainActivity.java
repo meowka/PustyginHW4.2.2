@@ -66,14 +66,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnDel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"qqq",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
